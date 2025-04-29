@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div id="buttons">
+            <table>
+                <tr>
+            <td ><button onclick="clearDisplay()"class="operator">AC</button></td>
+            <td><button onclick="appendToDisplay('%%')"class="operator">%</button></td>
+            <td><button onclick="deleteLast()"class="operator">DEL</button></td>
+            <td><button onclick="clearDisplay(/)"class="operator">/</button></td></tr>
+            <tr><td><button onclick="appendToDisplay('7')"class="oparand">7</button></td>
+            <td><button onclick="appendToDisplay('8')"class="oparand">8</button></td>
+            <td><button onclick="appendToDisplay('9')"class="oparand">9</button></td>
+            <td ><button onclick="appendToDisplay('*')"class="operator">*</button></td></tr>
+            <tr><td><button onclick="appendToDisplay('4')"class="oparand">4</button></td>
+            <td><button onclick="appendToDisplay('5')"class="oparand">5</button></td>
+            <td><button onclick="appendToDisplay('6')"class="oparand">6</button></td>
+            <td><button onclick="appendToDisplay('-')"class="operator">-</button></td></tr>
+            <tr><td><button onclick="appendToDisplay('1')"class="oparand">1</button></td>
+            <td><button onclick="appendToDisplay('2')"class="oparand">2</button></td>
+            <td><button onclick="appendToDisplay('3')"class="oparand">3</button></td>
+            <td><button onclick="appendToDisplay('+')"class="operator">+</button></td></tr>
+            <tr><td><button onclick="appendToDisplay('00')"class="oparand">00</button></td>
+            <td><button onclick="appendToDisplay('0')"class="oparand">0</button></td>
+            <td><button onclick="appendToDisplay('.')"class="operator">.</button></td>
+            <td><button onclick="calculateResult()"class="operator">=</button></td></tr>
+        </div>
+    </body>
+</html>
